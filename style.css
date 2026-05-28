@@ -68,7 +68,7 @@ body {
 
 .audio-btn {
     display: inline-flex;
-    align-items: right;
+    align-items: center;
     gap: 7px;
     font-family: var(--f-body);
     font-size: 0.82rem;
