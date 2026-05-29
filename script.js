@@ -189,7 +189,7 @@ function getDayOfYear() {
 function expandPassage(str) {
     str = str.trim();
     var results = [];
-    var m = str.match(/^(\d\s+[A-Za-z][\w\s]*?|[A-Za-z][\w\s]*?)\s+(\d[\d\S]*)$/);
+    var m = str.match(/^(\d\s+[A-Za-z][A-Za-z\s]*?|[A-Za-z][A-Za-z\s]*?)\s+(\d[\d,:\-\s]*)$/);
     if (!m) return [];
     var book = m[1].trim();
     m[2].trim().split(',').forEach(function(part) {
